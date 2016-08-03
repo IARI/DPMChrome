@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "DPM Notifications",
+  "description": "This extension Notifies you of your Patch status in Darcs Patch Manager",
+  "version": "1.0",
+  "options_page": "options.html",
+  "offline_enabled": false,
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
+  "background": {
+    "scripts": [
+      "task.js"
+    ]
+  },
+  "icons": {
+    "128": "Haskell.png"
+  },
+  "web_accessible_resources": [
+    "Haskell.png",
+    "HaskellRed.png"
+  ],
+  "browser_action": {
+    "default_icon": "Haskell.png",
+    "default_popup": "options.html"
+  },
+  "permissions": [
+    "notifications",
+    "storage",
+    "<all_urls>",
+    //"alarms",
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/"
+  ]
+}
